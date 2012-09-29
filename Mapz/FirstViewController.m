@@ -19,9 +19,10 @@
 
 - (void)viewDidLoad
 {
+    NSString *url = @"https://google-developers.appspot.com/maps/documentation/javascript/examples/map-geolocation";
+    NSURLRequest *request = [NSURLRequest requestWithURL:[NSURL URLWithString:url]];
+    [webView loadRequest:request];
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
-    [webView loadRequest: [NSURLRequest requestWithURL: [NSURL URLWithString: @"http://www.sunet.se"]]];
 }
 
 - (void)didReceiveMemoryWarning

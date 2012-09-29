@@ -16,6 +16,11 @@
     [super dealloc];
 }
 
+// Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
+- (BOOL) shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation {
+    return YES;
+}
+
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
