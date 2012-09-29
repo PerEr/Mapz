@@ -19,7 +19,7 @@
 
 - (void)viewDidLoad
 {
-    NSString *url = @"https://google-developers.appspot.com/maps/documentation/javascript/examples/map-geolocation";
+    NSString *url = @"http://192.168.0.132:8080/mapz.html";
     NSURLRequest *request = [NSURLRequest requestWithURL:[NSURL URLWithString:url]];
     [webView loadRequest:request];
     [super viewDidLoad];
