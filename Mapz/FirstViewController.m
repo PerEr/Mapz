@@ -8,16 +8,20 @@
 
 #import "FirstViewController.h"
 
-@interface FirstViewController ()
+//@interface FirstViewController ()
 
-@end
+//@end
+
 
 @implementation FirstViewController
+
+@synthesize webView;
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    [webView loadRequest: [NSURLRequest requestWithURL: [NSURL URLWithString: @"http://www.sunet.se"]]];
 }
 
 - (void)didReceiveMemoryWarning

@@ -8,6 +8,11 @@
 
 #import <UIKit/UIKit.h>
 
-@interface FirstViewController : UIViewController
+@interface FirstViewController : UIViewController {
+    
+  IBOutlet UIWebView *webView;
+}
+
+@property(nonatomic, assign) UIWebView *webView;
 
 @end
